@@ -22,3 +22,18 @@ Route::get('/', function () {
 
     return view('home', $data);
 });
+
+Route::get('login', function () {
+
+    $message = 'Login in this page';
+
+    return view('login', compact('message'));
+});
+
+Route::get('about', function () {
+
+    $message = 'This is the page of about';
+    $text = 'lorem ipsum dolor';
+
+    return view('about', compact('message','text'));
+});

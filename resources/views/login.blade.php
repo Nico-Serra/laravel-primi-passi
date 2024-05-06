@@ -11,8 +11,8 @@
 <body>
     <header>
 
-        <ul class="nav justify-content-center bg-dark py-1">
-            <li class="nav-item ">
+        <ul class="nav justify-content-center bg-primary py-1">
+            <li class="nav-item">
                 <a class="nav-link text-light" href="/" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
@@ -27,19 +27,16 @@
     </header>
 
     <body>
-        <div class="container text-center my-4">
-            <h1>Hello World</h1>
+        <div class="container my-4 text-center">
+            <h1>{{$message}}</h1>
 
-            <p>{{$message}}</p>
-
-            <ul class="list-unstyled">
-                @foreach($menu as $item)
-                <li>
-                    {{$item}}
-                </li>
-                @endforeach
-            </ul>
+            <div class="my-4 d-flex flex-column aling-items-center justify-content-center ">
+                <input type="text" placeholder="inser your email" class="w-25 my-1 mx-auto">
+                <input type="password" placeholder="inser your password" class="w-25 my-1 mx-auto">
+                <button class="btn btn-primary w-25 my-1 mx-auto">Login</button>
+            </div>
         </div>
+
     </body>
 
     <footer>

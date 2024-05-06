@@ -11,8 +11,8 @@
 <body>
     <header>
 
-        <ul class="nav justify-content-center bg-dark py-1">
-            <li class="nav-item ">
+        <ul class="nav justify-content-center bg-danger py-1">
+            <li class="nav-item">
                 <a class="nav-link text-light" href="/" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
@@ -28,17 +28,9 @@
 
     <body>
         <div class="container text-center my-4">
-            <h1>Hello World</h1>
+            <h1>{{$message}}</h1>
 
-            <p>{{$message}}</p>
-
-            <ul class="list-unstyled">
-                @foreach($menu as $item)
-                <li>
-                    {{$item}}
-                </li>
-                @endforeach
-            </ul>
+            <p>{{$text}}</p>
         </div>
     </body>
 
